@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: start;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 200px;
+  padding: 15px;
+  border-radius: 50px;
+  margin-top: 26px;
+  outline: none;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 60px;
+
+  width: 500px;
+}
+
+.logo {
+  margin: 50px 0 0;
+}
+
+.image-container {
+  margin: 85px 0 0;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.social-media-links {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.fab {
+  cursor: pointer;
+  color: #fff;
+  padding: 5px;
+}
+
+.fab:hover {
+  color: hsl(300, 69%, 71%);
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: 180%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+  }
+
+  .text-container {
+    text-align: center;
+    margin: 70px 0 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  button {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  .social-media-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin-top: 40px;
+  }
+}
